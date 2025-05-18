@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="bochkarev">
+        <createTable tableName="users">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)"/>
+            <column name="email" type="varchar(255)">
+                <constraints unique="true" nullable="false"/>
+            </column>
+            <column name="password" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="varchar(500)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="bochkarev">
+        <createTable tableName="products">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="brand" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="size" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="color" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="price" type="decimal(10,2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="text"/>
+            <column name="quantity" type="integer" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="3" author="bochkarev">
+        <createTable tableName="orders">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_id" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_order_user" references="users(id)"/>
+            </column>
+            <column name="status" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="total_price" type="decimal(10,2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="delivery_address" type="varchar(500)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="product_ids" type="bigint[]">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+
+    <!-- Создание таблицы Review -->
+<!--    <changeSet id="5" author="bochkarev">-->
+<!--        <createTable tableName="review">-->
+<!--            <column name="id" type="bigint" autoIncrement="true">-->
+<!--                <constraints primaryKey="true" nullable="false"/>-->
+<!--            </column>-->
+<!--            <column name="product_id" type="bigint">-->
+<!--                <constraints nullable="false" foreignKeyName="fk_review_product" references="product(id)"/>-->
+<!--            </column>-->
+<!--            <column name="user_id" type="bigint">-->
+<!--                <constraints nullable="false" foreignKeyName="fk_review_user" references="user(id)"/>-->
+<!--            </column>-->
+<!--            <column name="rating" type="integer">-->
+<!--                <constraints nullable="false" checkConstraintName="chk_rating_range" check="rating BETWEEN 1 AND 5"/>-->
+<!--            </column>-->
+<!--            <column name="comment" type="text"/>-->
+<!--            <column name="created_at" type="timestamp" defaultValueComputed="CURRENT_TIMESTAMP"/>-->
+<!--        </createTable>-->
+<!--    </changeSet>-->
+</databaseChangeLog>
