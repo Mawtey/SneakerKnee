@@ -21,6 +21,7 @@
         </createTable>
     </changeSet>
 
+
     <changeSet id="2" author="bochkarev">
         <createTable tableName="products">
             <column name="id" type="bigint" autoIncrement="true">
@@ -47,7 +48,6 @@
             </column>
         </createTable>
     </changeSet>
-
     <changeSet id="3" author="bochkarev">
         <createTable tableName="orders">
             <column name="id" type="bigint" autoIncrement="true">
@@ -69,6 +69,14 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
+    </changeSet>
+
+    <changeSet id="4" author="bochkarev">
+        <addColumn tableName="users">
+            <column name="role" type="varchar(50)" defaultValue="USER">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
     </changeSet>
 
 

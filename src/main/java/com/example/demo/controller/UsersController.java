@@ -1,12 +1,15 @@
 package com.example.demo.controller;
 
 import com.example.demo.model.Users;
+import com.example.demo.security.AuthResponse;
+import com.example.demo.security.JwtService;
 import com.example.demo.service.UsersService;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,10 +19,12 @@ import java.util.List;
 public class UsersController {
 
     private final UsersService usersService;
+    private final JwtService jwtService;
     private static final Logger logger = LoggerFactory.getLogger(UsersController.class);
 
-    public UsersController(UsersService usersService) {
+    public UsersController(UsersService usersService, JwtService jwtService) {
         this.usersService = usersService;
+        this.jwtService = jwtService;
         logger.info("UsersController initialized");
     }
 
@@ -29,14 +34,13 @@ public class UsersController {
         try {
             Users registeredUser = usersService.registerUser(user);
             logger.info("User registered successfully with ID: {}", registeredUser.getId());
-            return ResponseEntity.status(HttpStatus.CREATED).body(registeredUser);
+
+            String jwtToken = jwtService.generateToken(registeredUser);
+
+            return ResponseEntity.status(HttpStatus.CREATED).body(new AuthResponse(jwtToken));
         } catch (IllegalArgumentException e) {
             logger.error("Error registering user: {}", e.getMessage());
-            return ResponseEntity.badRequest().body(e.getMessage()); // <--- ВАЖНО
-        } catch (Exception e) {
-            logger.error("Unexpected error during user registration: {}", e.getMessage());
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body("Unexpected error occurred");
+            return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
 
@@ -52,6 +56,12 @@ public class UsersController {
                     logger.warn("User with ID {} not found", id);
                     return ResponseEntity.notFound().build();
                 });
+    }
+
+    @GetMapping("/admin-only")
+    @PreAuthorize("hasRole('ADMIN')")
+    public String adminOnly() {
+        return "This is admin only endpoint";
     }
 
     @GetMapping
