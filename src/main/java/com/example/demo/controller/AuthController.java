@@ -32,7 +32,6 @@ public class AuthController {
                 )
         );
 
-        // Получаем UserDetails из аутентификации
         User userDetails = (User) authentication.getPrincipal();
 
         String jwtToken = jwtService.generateToken(userDetails);
