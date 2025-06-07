@@ -1,50 +1,28 @@
-2025-05-29 20:22:52 [main] INFO  c.e.demo.SneakerKneeApplication - Starting SneakerKneeApplication using Java 17.0.12 with PID 17132 (C:\Users\mat_m\IdeaProjects\SneakerKnee\target\classes started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
-2025-05-29 20:22:52 [main] INFO  c.e.demo.SneakerKneeApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-29 20:22:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-29 20:22:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
-2025-05-29 20:22:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-05-29 20:22:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-05-29 20:22:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-05-29 20:22:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-05-29 20:22:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1195 ms
-2025-05-29 20:22:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-05-29 20:22:54 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@119290b9
-2025-05-29 20:22:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-05-29 20:22:54 [main] INFO  liquibase.database - Set default schema name to public
-2025-05-29 20:22:54 [main] INFO  liquibase.changelog - Creating database history table with name: public.databasechangelog
-2025-05-29 20:22:54 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
-2025-05-29 20:22:54 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
-2025-05-29 20:22:54 [main] INFO  liquibase.command - Using deploymentId: 8535774777
-2025-05-29 20:22:54 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
-2025-05-29 20:22:54 [main] INFO  liquibase.ui - Running Changeset: db/changelog/db.changelog-1.0.xml::1::bochkarev
-2025-05-29 20:22:54 [main] INFO  liquibase.changelog - Table users created
-2025-05-29 20:22:54 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-1.0.xml::1::bochkarev ran successfully in 8ms
-2025-05-29 20:22:54 [main] INFO  liquibase.ui - Running Changeset: db/changelog/db.changelog-1.0.xml::2::bochkarev
-2025-05-29 20:22:54 [main] INFO  liquibase.changelog - Table products created
-2025-05-29 20:22:54 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-1.0.xml::2::bochkarev ran successfully in 8ms
-2025-05-29 20:22:54 [main] INFO  liquibase.ui - Running Changeset: db/changelog/db.changelog-1.0.xml::3::bochkarev
-2025-05-29 20:22:54 [main] INFO  liquibase.changelog - Table orders created
-2025-05-29 20:22:54 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-1.0.xml::3::bochkarev ran successfully in 6ms
-2025-05-29 20:22:54 [main] INFO  liquibase.ui - Running Changeset: db/changelog/db.changelog-1.0.xml::4::bochkarev
-2025-05-29 20:22:54 [main] INFO  liquibase.changelog - Columns role(varchar(50)) added to users
-2025-05-29 20:22:54 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-1.0.xml::4::bochkarev ran successfully in 2ms
-2025-05-29 20:22:54 [main] INFO  liquibase.util - UPDATE SUMMARY
-2025-05-29 20:22:54 [main] INFO  liquibase.util - Run:                          4
-2025-05-29 20:22:54 [main] INFO  liquibase.util - Previously run:               0
-2025-05-29 20:22:54 [main] INFO  liquibase.util - Filtered out:                 0
-2025-05-29 20:22:54 [main] INFO  liquibase.util - -------------------------------
-2025-05-29 20:22:54 [main] INFO  liquibase.util - Total change sets:            4
-2025-05-29 20:22:54 [main] INFO  liquibase.util - Update summary generated
-2025-05-29 20:22:54 [main] INFO  liquibase.command - Update command completed successfully.
-2025-05-29 20:22:54 [main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 4
-2025-05-29 20:22:54 [main] INFO  liquibase.lockservice - Successfully released change log lock
-2025-05-29 20:22:54 [main] INFO  liquibase.command - Command execution complete
-2025-05-29 20:22:54 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-29 20:22:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-05-29 20:22:54 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-05-29 20:22:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-29 20:22:55 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-29 20:22:55 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-06-07 00:09:11 [main] INFO  c.e.demo.SneakerKneeApplicationTests - Starting SneakerKneeApplicationTests using Java 17.0.12 with PID 2784 (started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
+2025-06-07 00:09:11 [main] INFO  c.e.demo.SneakerKneeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 00:09:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 00:09:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2025-06-07 00:09:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 00:09:12 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@134a8ead
+2025-06-07 00:09:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 00:09:12 [main] INFO  liquibase.database - Set default schema name to public
+2025-06-07 00:09:12 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 00:09:12 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-06-07 00:09:12 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 00:09:12 [main] INFO  liquibase.util - UPDATE SUMMARY
+2025-06-07 00:09:12 [main] INFO  liquibase.util - Run:                          0
+2025-06-07 00:09:12 [main] INFO  liquibase.util - Previously run:               4
+2025-06-07 00:09:12 [main] INFO  liquibase.util - Filtered out:                 0
+2025-06-07 00:09:12 [main] INFO  liquibase.util - -------------------------------
+2025-06-07 00:09:12 [main] INFO  liquibase.util - Total change sets:            4
+2025-06-07 00:09:12 [main] INFO  liquibase.util - Update summary generated
+2025-06-07 00:09:12 [main] INFO  liquibase.command - Command execution complete
+2025-06-07 00:09:12 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 00:09:12 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-07 00:09:13 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 00:09:13 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 00:09:13 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-07 00:09:13 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -52,46 +30,48 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-29 20:22:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-29 20:22:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-29 20:22:56 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
-2025-05-29 20:22:56 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-29 20:22:56 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:22:56 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:22:56 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
-2025-05-29 20:22:56 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-29 20:22:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-05-29 20:22:57 [main] INFO  c.e.demo.SneakerKneeApplication - Started SneakerKneeApplication in 4.946 seconds (process running for 5.234)
-2025-05-29 20:22:59 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-29 20:22:59 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-05-29 20:22:59 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-29 20:22:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-05-29 20:22:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-05-29 20:23:27 [main] INFO  c.e.d.controller.AuthControllerTest - Starting AuthControllerTest using Java 17.0.12 with PID 11984 (started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
-2025-05-29 20:23:27 [main] INFO  c.e.d.controller.AuthControllerTest - No active profile set, falling back to 1 default profile: "default"
-2025-05-29 20:23:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-29 20:23:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
-2025-05-29 20:23:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-05-29 20:23:28 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@24e5389c
-2025-05-29 20:23:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-05-29 20:23:28 [main] INFO  liquibase.database - Set default schema name to public
-2025-05-29 20:23:29 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
-2025-05-29 20:23:29 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
-2025-05-29 20:23:29 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
-2025-05-29 20:23:29 [main] INFO  liquibase.util - UPDATE SUMMARY
-2025-05-29 20:23:29 [main] INFO  liquibase.util - Run:                          0
-2025-05-29 20:23:29 [main] INFO  liquibase.util - Previously run:               4
-2025-05-29 20:23:29 [main] INFO  liquibase.util - Filtered out:                 0
-2025-05-29 20:23:29 [main] INFO  liquibase.util - -------------------------------
-2025-05-29 20:23:29 [main] INFO  liquibase.util - Total change sets:            4
-2025-05-29 20:23:29 [main] INFO  liquibase.util - Update summary generated
-2025-05-29 20:23:29 [main] INFO  liquibase.command - Command execution complete
-2025-05-29 20:23:29 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-29 20:23:29 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-05-29 20:23:29 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-05-29 20:23:29 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-29 20:23:29 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-29 20:23:29 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-06-07 00:09:13 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 00:09:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:09:14 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
+2025-06-07 00:09:14 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 00:09:14 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
+2025-06-07 00:09:14 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
+2025-06-07 00:09:14 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
+2025-06-07 00:09:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 00:09:15 [main] INFO  c.e.demo.SneakerKneeApplicationTests - Started SneakerKneeApplicationTests in 4.478 seconds (process running for 5.229)
+2025-06-07 00:09:15 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:09:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 00:09:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 00:09:29 [main] INFO  c.e.demo.SneakerKneeApplication - Starting SneakerKneeApplication using Java 17.0.12 with PID 17268 (C:\Users\mat_m\IdeaProjects\SneakerKnee\target\classes started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
+2025-06-07 00:09:29 [main] INFO  c.e.demo.SneakerKneeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 00:09:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 00:09:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2025-06-07 00:09:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-07 00:09:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-07 00:09:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-07 00:09:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-07 00:09:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1284 ms
+2025-06-07 00:09:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 00:09:31 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@64656b9e
+2025-06-07 00:09:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 00:09:31 [main] INFO  liquibase.database - Set default schema name to public
+2025-06-07 00:09:31 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 00:09:31 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-06-07 00:09:31 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 00:09:31 [main] INFO  liquibase.util - UPDATE SUMMARY
+2025-06-07 00:09:31 [main] INFO  liquibase.util - Run:                          0
+2025-06-07 00:09:31 [main] INFO  liquibase.util - Previously run:               4
+2025-06-07 00:09:31 [main] INFO  liquibase.util - Filtered out:                 0
+2025-06-07 00:09:31 [main] INFO  liquibase.util - -------------------------------
+2025-06-07 00:09:31 [main] INFO  liquibase.util - Total change sets:            4
+2025-06-07 00:09:31 [main] INFO  liquibase.util - Update summary generated
+2025-06-07 00:09:31 [main] INFO  liquibase.command - Command execution complete
+2025-06-07 00:09:31 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 00:09:31 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-07 00:09:31 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 00:09:32 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 00:09:32 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-07 00:09:32 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -99,237 +79,66 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-29 20:23:30 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-29 20:23:30 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-29 20:23:30 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
-2025-05-29 20:23:30 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-29 20:23:30 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:23:30 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:23:30 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
-2025-05-29 20:23:30 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-29 20:23:31 [main] INFO  c.e.d.controller.AuthControllerTest - Started AuthControllerTest in 4.181 seconds (process running for 4.983)
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.OrdersController - Updating order status for ID: 1, new status: SHIPPED
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.OrdersController - Order status updated successfully for ID: 1
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.OrdersController - Attempt to cancel order with ID: 1
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.OrdersController - Order canceled successfully with ID: 1
-2025-05-29 20:23:32 [main] WARN  c.e.demo.controller.OrdersController - Order with ID 1 not found
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.OrdersController - Attempt to create order for user: 1, products: [1, 2], address: Test Address
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.OrdersController - Order created successfully with ID: 1
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.OrdersController - Attempt to create order for user: 1, products: [1, 2], address: Test Address
-2025-05-29 20:23:32 [main] ERROR c.e.demo.controller.OrdersController - Error creating order: Invalid data
-2025-05-29 20:23:32 [main] INFO  c.e.d.controller.ProductsController - Attempt to update product ID 1 with data: com.example.demo.model.Products@16374086
-2025-05-29 20:23:32 [main] INFO  c.e.d.controller.ProductsController - Product ID 1 updated successfully
-2025-05-29 20:23:32 [main] WARN  c.e.d.controller.ProductsController - Product with ID 1 not found
-2025-05-29 20:23:32 [main] INFO  c.e.d.controller.ProductsController - Attempt to delete product with ID: 1
-2025-05-29 20:23:32 [main] INFO  c.e.d.controller.ProductsController - Product ID 1 deleted successfully
-2025-05-29 20:23:32 [main] INFO  c.e.d.controller.ProductsController - Attempt to create new product: com.example.demo.model.Products@6f9329f3
-2025-05-29 20:23:32 [main] INFO  c.e.d.controller.ProductsController - Product created successfully with ID: 1
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
-2025-05-29 20:23:32 [main] WARN  c.e.demo.controller.UsersController - User with ID 1 not found
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - Attempt to delete user with ID: 1
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - User ID 1 deleted successfully
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - Attempt to update user ID 1 with data: com.example.demo.model.Users@2cfe5f7c
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - User ID 1 updated successfully
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - Attempt to register new user with email: test@example.com
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - User registered successfully with ID: 1
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - Attempt to register new user with email: test@example.com
-2025-05-29 20:23:32 [main] ERROR c.e.demo.controller.UsersController - Error registering user: Email already exists
-2025-05-29 20:23:32 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.repository.OrdersRepositoryIntegrationTest]: OrdersRepositoryIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-29 20:23:32 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.SneakerKneeApplication for test class com.example.demo.repository.OrdersRepositoryIntegrationTest
-2025-05-29 20:23:32 [main] INFO  c.e.d.r.OrdersRepositoryIntegrationTest - Starting OrdersRepositoryIntegrationTest using Java 17.0.12 with PID 11984 (started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
-2025-05-29 20:23:32 [main] INFO  c.e.d.r.OrdersRepositoryIntegrationTest - The following 1 profile is active: "test"
-2025-05-29 20:23:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-29 20:23:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
-2025-05-29 20:23:32 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-29 20:23:32 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-05-29 20:23:32 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-29 20:23:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-2025-05-29 20:23:32 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@66041d36
-2025-05-29 20:23:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-2025-05-29 20:23:32 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-29 20:23:32 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
-	Database driver: undefined/unknown
-	Database version: 17.5
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-29 20:23:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-29 20:23:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-29 20:23:32 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
-2025-05-29 20:23:32 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:23:32 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:23:32 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
-2025-05-29 20:23:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-29 20:23:33 [main] INFO  c.e.d.r.OrdersRepositoryIntegrationTest - Started OrdersRepositoryIntegrationTest in 0.903 seconds (process running for 6.675)
-2025-05-29 20:23:33 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.repository.ProductsRepositoryIntegrationTest]: ProductsRepositoryIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-29 20:23:33 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.SneakerKneeApplication for test class com.example.demo.repository.ProductsRepositoryIntegrationTest
-2025-05-29 20:23:33 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.repository.UsersRepositoryIntegrationTest]: UsersRepositoryIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-29 20:23:33 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.SneakerKneeApplication for test class com.example.demo.repository.UsersRepositoryIntegrationTest
-2025-05-29 20:23:33 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23505
-2025-05-29 20:23:33 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_email_key"
-  Подробности: Ключ "(email)=(unique@example.com)" уже существует.
-2025-05-29 20:23:33 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.security.JwtServiceTest]: JwtServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-29 20:23:33 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.SneakerKneeApplication for test class com.example.demo.security.JwtServiceTest
-2025-05-29 20:23:33 [main] INFO  c.e.demo.security.JwtServiceTest - Starting JwtServiceTest using Java 17.0.12 with PID 11984 (started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
-2025-05-29 20:23:33 [main] INFO  c.e.demo.security.JwtServiceTest - No active profile set, falling back to 1 default profile: "default"
-2025-05-29 20:23:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-29 20:23:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
-2025-05-29 20:23:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
-2025-05-29 20:23:33 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@4f623753
-2025-05-29 20:23:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
-2025-05-29 20:23:33 [main] INFO  liquibase.database - Set default schema name to public
-2025-05-29 20:23:33 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
-2025-05-29 20:23:33 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
-2025-05-29 20:23:33 [main] INFO  liquibase.util - UPDATE SUMMARY
-2025-05-29 20:23:33 [main] INFO  liquibase.util - Run:                          0
-2025-05-29 20:23:33 [main] INFO  liquibase.util - Previously run:               4
-2025-05-29 20:23:33 [main] INFO  liquibase.util - Filtered out:                 0
-2025-05-29 20:23:33 [main] INFO  liquibase.util - -------------------------------
-2025-05-29 20:23:33 [main] INFO  liquibase.util - Total change sets:            4
-2025-05-29 20:23:33 [main] INFO  liquibase.util - Update summary generated
-2025-05-29 20:23:33 [main] INFO  liquibase.command - Command execution complete
-2025-05-29 20:23:33 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-29 20:23:33 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-05-29 20:23:33 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-29 20:23:33 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-29 20:23:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
-	Database driver: undefined/unknown
-	Database version: 17.5
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-29 20:23:33 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-29 20:23:34 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-29 20:23:34 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:23:34 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
-2025-05-29 20:23:34 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-29 20:23:34 [main] INFO  c.e.demo.security.JwtServiceTest - Started JwtServiceTest in 0.675 seconds (process running for 7.807)
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - Updating status for order ID: 1 to PROCESSING
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - Order ID: 1 status updated to PROCESSING
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - Cancelling order with ID: 1
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - Order ID: 1 cancelled successfully
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - Updating status for order ID: 1 to PROCESSING
-2025-05-29 20:23:34 [main] ERROR c.example.demo.service.OrdersService - Order not found with ID: 1
-2025-05-29 20:23:34 [main] ERROR c.example.demo.service.OrdersService - Error updating order status: Order not found
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - Creating order for user ID: 1, products: [101], address: 123 Main St
-2025-05-29 20:23:34 [main] ERROR c.example.demo.service.OrdersService - User not found with ID: 1
-2025-05-29 20:23:34 [main] ERROR c.example.demo.service.OrdersService - Error creating order: User not found
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - Cancelling order with ID: 1
-2025-05-29 20:23:34 [main] ERROR c.example.demo.service.OrdersService - Order not found with ID: 1
-2025-05-29 20:23:34 [main] ERROR c.example.demo.service.OrdersService - Error cancelling order: Order not found
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - Creating order for user ID: 1, products: [101], address: 123 Main St
-2025-05-29 20:23:34 [main] ERROR c.example.demo.service.OrdersService - Product not found with ID: 101
-2025-05-29 20:23:34 [main] ERROR c.example.demo.service.OrdersService - Error creating order: Product not found: 101
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - Creating order for user ID: 1, products: [101, 102], address: 123 Main St
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.OrdersService - Order created successfully with ID: null
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - Decreasing quantity for product ID 1 by 3
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - Quantity decreased for product ID 1. New quantity: 7
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - Updating product ID 1 with new details: com.example.demo.model.Products@153412a1
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - Product ID 1 updated successfully
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - Updating product ID 1 with new details: com.example.demo.model.Products@f69187c
-2025-05-29 20:23:34 [main] ERROR c.e.demo.service.ProductsService - Product not found with ID: 1
-2025-05-29 20:23:34 [main] ERROR c.e.demo.service.ProductsService - Error updating product ID 1: Product not found
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - Deleting product with ID: 1
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - Product ID 1 deleted successfully
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - Creating new product: com.example.demo.model.Products@76ad04a1
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - Product created successfully with ID: null
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:23:34 [main] INFO  c.e.demo.service.ProductsService - Decreasing quantity for product ID 1 by 3
-2025-05-29 20:23:34 [main] ERROR c.e.demo.service.ProductsService - Not enough stock for product ID 1. Requested: 3, Available: 2
-2025-05-29 20:23:34 [main] ERROR c.e.demo.service.ProductsService - Error decreasing quantity for product ID 1: Not enough products in stock
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.UsersService - Attempting to register new user with email: test@example.com
-2025-05-29 20:23:34 [main] ERROR c.example.demo.service.UsersService - Registration failed - email already exists: test@example.com
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.UsersService - Attempting to register new user with email: test@example.com
-2025-05-29 20:23:34 [main] INFO  c.example.demo.service.UsersService - User registered successfully with ID: null
-2025-05-29 20:23:34 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.SneakerKneeApplicationTests]: SneakerKneeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-29 20:23:34 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.SneakerKneeApplication for test class com.example.demo.SneakerKneeApplicationTests
-2025-05-29 20:23:34 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-29 20:23:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-05-29 20:23:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-05-29 20:23:34 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-29 20:23:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-2025-05-29 20:23:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-2025-05-29 20:23:34 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-29 20:23:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
-2025-05-29 20:23:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
-2025-05-29 20:57:24 [main] INFO  c.e.demo.SneakerKneeApplication - Starting SneakerKneeApplication using Java 17.0.12 with PID 9780 (C:\Users\mat_m\IdeaProjects\SneakerKnee\target\classes started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
-2025-05-29 20:57:24 [main] INFO  c.e.demo.SneakerKneeApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-29 20:57:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-29 20:57:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
-2025-05-29 20:57:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-05-29 20:57:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-05-29 20:57:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-05-29 20:57:26 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-05-29 20:57:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1385 ms
-2025-05-29 20:57:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-05-29 20:57:26 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ccd611e
-2025-05-29 20:57:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-05-29 20:57:26 [main] INFO  liquibase.database - Set default schema name to public
-2025-05-29 20:57:26 [main] INFO  liquibase.changelog - Creating database history table with name: public.databasechangelog
-2025-05-29 20:57:26 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
-2025-05-29 20:57:26 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
-2025-05-29 20:57:27 [main] INFO  liquibase.command - Using deploymentId: 8537847000
-2025-05-29 20:57:27 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
-2025-05-29 20:57:27 [main] INFO  liquibase.ui - Running Changeset: db/changelog/db.changelog-1.0.xml::1::bochkarev
-2025-05-29 20:57:27 [main] INFO  liquibase.changelog - Table users created
-2025-05-29 20:57:27 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-1.0.xml::1::bochkarev ran successfully in 9ms
-2025-05-29 20:57:27 [main] INFO  liquibase.ui - Running Changeset: db/changelog/db.changelog-1.0.xml::2::bochkarev
-2025-05-29 20:57:27 [main] INFO  liquibase.changelog - Table products created
-2025-05-29 20:57:27 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-1.0.xml::2::bochkarev ran successfully in 9ms
-2025-05-29 20:57:27 [main] INFO  liquibase.ui - Running Changeset: db/changelog/db.changelog-1.0.xml::3::bochkarev
-2025-05-29 20:57:27 [main] INFO  liquibase.changelog - Table orders created
-2025-05-29 20:57:27 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-1.0.xml::3::bochkarev ran successfully in 8ms
-2025-05-29 20:57:27 [main] INFO  liquibase.ui - Running Changeset: db/changelog/db.changelog-1.0.xml::4::bochkarev
-2025-05-29 20:57:27 [main] INFO  liquibase.changelog - Columns role(varchar(50)) added to users
-2025-05-29 20:57:27 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-1.0.xml::4::bochkarev ran successfully in 2ms
-2025-05-29 20:57:27 [main] INFO  liquibase.util - UPDATE SUMMARY
-2025-05-29 20:57:27 [main] INFO  liquibase.util - Run:                          4
-2025-05-29 20:57:27 [main] INFO  liquibase.util - Previously run:               0
-2025-05-29 20:57:27 [main] INFO  liquibase.util - Filtered out:                 0
-2025-05-29 20:57:27 [main] INFO  liquibase.util - -------------------------------
-2025-05-29 20:57:27 [main] INFO  liquibase.util - Total change sets:            4
-2025-05-29 20:57:27 [main] INFO  liquibase.util - Update summary generated
-2025-05-29 20:57:27 [main] INFO  liquibase.command - Update command completed successfully.
-2025-05-29 20:57:27 [main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 4
-2025-05-29 20:57:27 [main] INFO  liquibase.lockservice - Successfully released change log lock
-2025-05-29 20:57:27 [main] INFO  liquibase.command - Command execution complete
-2025-05-29 20:57:27 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-29 20:57:27 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-05-29 20:57:27 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-05-29 20:57:27 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-29 20:57:27 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-29 20:57:27 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-06-07 00:09:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 00:09:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:09:33 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
+2025-06-07 00:09:33 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 00:09:33 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
+2025-06-07 00:09:33 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
+2025-06-07 00:09:33 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
+2025-06-07 00:09:33 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 00:09:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-07 00:09:34 [main] INFO  c.e.demo.SneakerKneeApplication - Started SneakerKneeApplication in 4.975 seconds (process running for 5.257)
+2025-06-07 00:09:50 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07 00:09:50 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-07 00:09:50 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-07 00:09:51 [http-nio-8080-exec-8] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 371 ms
+2025-06-07 00:10:03 [http-nio-8080-exec-10] INFO  c.e.demo.controller.OrdersController - Updating order status for ID: 1, new status: CANCELLED
+2025-06-07 00:10:03 [http-nio-8080-exec-10] INFO  c.example.demo.service.OrdersService - Updating status for order ID: 1 to CANCELLED
+2025-06-07 00:10:03 [http-nio-8080-exec-10] ERROR c.example.demo.service.OrdersService - Error updating order status: Authentication failed
+2025-06-07 00:10:07 [http-nio-8080-exec-1] INFO  c.e.demo.controller.OrdersController - Updating order status for ID: 2, new status: CANCELLED
+2025-06-07 00:10:07 [http-nio-8080-exec-1] INFO  c.example.demo.service.OrdersService - Updating status for order ID: 2 to CANCELLED
+2025-06-07 00:10:07 [http-nio-8080-exec-1] ERROR c.example.demo.service.OrdersService - Order not found with ID: 2
+2025-06-07 00:10:07 [http-nio-8080-exec-1] ERROR c.example.demo.service.OrdersService - Error updating order status: Order not found
+2025-06-07 00:10:07 [http-nio-8080-exec-1] ERROR c.e.demo.controller.OrdersController - Error updating order status: Order not found
+2025-06-07 00:10:20 [http-nio-8080-exec-3] INFO  c.e.demo.controller.OrdersController - Updating order status for ID: 1, new status: CANCELLED
+2025-06-07 00:10:20 [http-nio-8080-exec-3] INFO  c.example.demo.service.OrdersService - Updating status for order ID: 1 to CANCELLED
+2025-06-07 00:10:20 [http-nio-8080-exec-3] ERROR c.example.demo.service.OrdersService - Error updating order status: Authentication failed
+2025-06-07 00:10:47 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-07 00:10:47 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-07 00:10:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:10:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 00:10:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 00:14:12 [main] INFO  c.e.demo.SneakerKneeApplication - Starting SneakerKneeApplication using Java 17.0.12 with PID 17756 (C:\Users\mat_m\IdeaProjects\SneakerKnee\target\classes started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
+2025-06-07 00:14:12 [main] INFO  c.e.demo.SneakerKneeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 00:14:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 00:14:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2025-06-07 00:14:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-07 00:14:13 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-07 00:14:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-07 00:14:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-07 00:14:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1224 ms
+2025-06-07 00:14:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 00:14:13 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6870cfac
+2025-06-07 00:14:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 00:14:13 [main] INFO  liquibase.database - Set default schema name to public
+2025-06-07 00:14:14 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 00:14:14 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-06-07 00:14:14 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 00:14:14 [main] INFO  liquibase.util - UPDATE SUMMARY
+2025-06-07 00:14:14 [main] INFO  liquibase.util - Run:                          0
+2025-06-07 00:14:14 [main] INFO  liquibase.util - Previously run:               4
+2025-06-07 00:14:14 [main] INFO  liquibase.util - Filtered out:                 0
+2025-06-07 00:14:14 [main] INFO  liquibase.util - -------------------------------
+2025-06-07 00:14:14 [main] INFO  liquibase.util - Total change sets:            4
+2025-06-07 00:14:14 [main] INFO  liquibase.util - Update summary generated
+2025-06-07 00:14:14 [main] INFO  liquibase.command - Command execution complete
+2025-06-07 00:14:14 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 00:14:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-07 00:14:14 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 00:14:14 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 00:14:14 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-07 00:14:14 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -337,18 +146,379 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-29 20:57:28 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-29 20:57:28 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-29 20:57:28 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
-2025-05-29 20:57:28 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-29 20:57:28 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
-2025-05-29 20:57:29 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
-2025-05-29 20:57:29 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
-2025-05-29 20:57:29 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-29 20:57:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-05-29 20:57:29 [main] INFO  c.e.demo.SneakerKneeApplication - Started SneakerKneeApplication in 5.498 seconds (process running for 5.818)
-2025-05-29 20:57:31 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-29 20:57:31 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-05-29 20:57:31 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-29 20:57:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-05-29 20:57:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 00:14:15 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 00:14:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:14:15 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
+2025-06-07 00:14:15 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 00:14:15 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
+2025-06-07 00:14:15 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
+2025-06-07 00:14:15 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
+2025-06-07 00:14:16 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 00:14:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-07 00:14:16 [main] INFO  c.e.demo.SneakerKneeApplication - Started SneakerKneeApplication in 4.695 seconds (process running for 4.98)
+2025-06-07 00:14:19 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07 00:14:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-07 00:14:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-07 00:14:19 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 364 ms
+2025-06-07 00:14:54 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-07 00:14:54 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-07 00:14:54 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:14:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 00:14:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 00:15:02 [main] INFO  c.e.demo.SneakerKneeApplication - Starting SneakerKneeApplication using Java 17.0.12 with PID 12680 (C:\Users\mat_m\IdeaProjects\SneakerKnee\target\classes started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
+2025-06-07 00:15:02 [main] INFO  c.e.demo.SneakerKneeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 00:15:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 00:15:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+2025-06-07 00:15:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-07 00:15:04 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-07 00:15:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-07 00:15:04 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-07 00:15:04 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1295 ms
+2025-06-07 00:15:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 00:15:04 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2dd178f3
+2025-06-07 00:15:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 00:15:04 [main] INFO  liquibase.database - Set default schema name to public
+2025-06-07 00:15:05 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 00:15:05 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-06-07 00:15:05 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 00:15:05 [main] INFO  liquibase.util - UPDATE SUMMARY
+2025-06-07 00:15:05 [main] INFO  liquibase.util - Run:                          0
+2025-06-07 00:15:05 [main] INFO  liquibase.util - Previously run:               4
+2025-06-07 00:15:05 [main] INFO  liquibase.util - Filtered out:                 0
+2025-06-07 00:15:05 [main] INFO  liquibase.util - -------------------------------
+2025-06-07 00:15:05 [main] INFO  liquibase.util - Total change sets:            4
+2025-06-07 00:15:05 [main] INFO  liquibase.util - Update summary generated
+2025-06-07 00:15:05 [main] INFO  liquibase.command - Command execution complete
+2025-06-07 00:15:05 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 00:15:05 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-07 00:15:05 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 00:15:05 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 00:15:05 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-07 00:15:05 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07 00:15:06 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 00:15:06 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:15:06 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
+2025-06-07 00:15:06 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 00:15:06 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
+2025-06-07 00:15:06 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
+2025-06-07 00:15:06 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
+2025-06-07 00:15:06 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 00:15:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-07 00:15:07 [main] INFO  c.e.demo.SneakerKneeApplication - Started SneakerKneeApplication in 4.9 seconds (process running for 5.17)
+2025-06-07 00:15:16 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07 00:15:16 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-07 00:15:16 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-07 00:15:16 [http-nio-8080-exec-1] INFO  c.e.demo.controller.OrdersController - Updating order status for ID: 1, new status: CANCELLED
+2025-06-07 00:15:16 [http-nio-8080-exec-1] INFO  c.example.demo.service.OrdersService - Updating status for order ID: 1 to CANCELLED
+2025-06-07 00:15:17 [http-nio-8080-exec-1] ERROR c.example.demo.service.OrdersService - Error updating order status: Authentication failed
+2025-06-07 00:18:03 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-07 00:18:03 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-07 00:18:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:18:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 00:18:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 00:18:26 [main] INFO  c.e.demo.SneakerKneeApplication - Starting SneakerKneeApplication using Java 17.0.12 with PID 16476 (C:\Users\mat_m\IdeaProjects\SneakerKnee\target\classes started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
+2025-06-07 00:18:26 [main] INFO  c.e.demo.SneakerKneeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 00:18:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 00:18:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+2025-06-07 00:18:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-07 00:18:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-07 00:18:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-07 00:18:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-07 00:18:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1231 ms
+2025-06-07 00:18:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 00:18:27 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2dd178f3
+2025-06-07 00:18:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 00:18:27 [main] INFO  liquibase.database - Set default schema name to public
+2025-06-07 00:18:28 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 00:18:28 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-06-07 00:18:28 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 00:18:28 [main] INFO  liquibase.util - UPDATE SUMMARY
+2025-06-07 00:18:28 [main] INFO  liquibase.util - Run:                          0
+2025-06-07 00:18:28 [main] INFO  liquibase.util - Previously run:               4
+2025-06-07 00:18:28 [main] INFO  liquibase.util - Filtered out:                 0
+2025-06-07 00:18:28 [main] INFO  liquibase.util - -------------------------------
+2025-06-07 00:18:28 [main] INFO  liquibase.util - Total change sets:            4
+2025-06-07 00:18:28 [main] INFO  liquibase.util - Update summary generated
+2025-06-07 00:18:28 [main] INFO  liquibase.command - Command execution complete
+2025-06-07 00:18:28 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 00:18:28 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-07 00:18:28 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 00:18:28 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 00:18:28 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-07 00:18:28 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07 00:18:29 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 00:18:29 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:18:29 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
+2025-06-07 00:18:29 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 00:18:29 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
+2025-06-07 00:18:29 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
+2025-06-07 00:18:30 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
+2025-06-07 00:18:30 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 00:18:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-07 00:18:30 [main] INFO  c.e.demo.SneakerKneeApplication - Started SneakerKneeApplication in 4.741 seconds (process running for 5.015)
+2025-06-07 00:18:34 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07 00:18:34 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-07 00:18:34 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-07 00:18:34 [http-nio-8080-exec-1] INFO  c.e.demo.controller.OrdersController - Updating order status for ID: 1, new status: CANCELLED
+2025-06-07 00:18:34 [http-nio-8080-exec-1] INFO  c.example.demo.service.OrdersService - Updating status for order ID: 1 to CANCELLED
+2025-06-07 00:18:36 [http-nio-8080-exec-1] INFO  c.example.demo.service.EmailService - Email sent to testuser@example.com for order ID 1 with new status CANCELLED
+2025-06-07 00:18:36 [http-nio-8080-exec-1] INFO  c.example.demo.service.OrdersService - Order ID: 1 status updated to CANCELLED
+2025-06-07 00:18:36 [http-nio-8080-exec-1] INFO  c.e.demo.controller.OrdersController - Order status updated successfully for ID: 1
+2025-06-07 00:20:28 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-07 00:20:28 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-07 00:20:28 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:20:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 00:20:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 00:20:40 [main] INFO  c.e.demo.SneakerKneeApplication - Starting SneakerKneeApplication using Java 17.0.12 with PID 4756 (C:\Users\mat_m\IdeaProjects\SneakerKnee\target\classes started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
+2025-06-07 00:20:40 [main] INFO  c.e.demo.SneakerKneeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 00:20:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 00:20:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+2025-06-07 00:20:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-07 00:20:41 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-07 00:20:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-07 00:20:41 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-07 00:20:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1320 ms
+2025-06-07 00:20:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 00:20:41 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2dd178f3
+2025-06-07 00:20:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 00:20:41 [main] INFO  liquibase.database - Set default schema name to public
+2025-06-07 00:20:42 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 00:20:42 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-06-07 00:20:42 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 00:20:42 [main] INFO  liquibase.util - UPDATE SUMMARY
+2025-06-07 00:20:42 [main] INFO  liquibase.util - Run:                          0
+2025-06-07 00:20:42 [main] INFO  liquibase.util - Previously run:               4
+2025-06-07 00:20:42 [main] INFO  liquibase.util - Filtered out:                 0
+2025-06-07 00:20:42 [main] INFO  liquibase.util - -------------------------------
+2025-06-07 00:20:42 [main] INFO  liquibase.util - Total change sets:            4
+2025-06-07 00:20:42 [main] INFO  liquibase.util - Update summary generated
+2025-06-07 00:20:42 [main] INFO  liquibase.command - Command execution complete
+2025-06-07 00:20:42 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 00:20:42 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-07 00:20:42 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 00:20:42 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 00:20:42 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-07 00:20:42 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07 00:20:43 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 00:20:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:20:43 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
+2025-06-07 00:20:44 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 00:20:44 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
+2025-06-07 00:20:44 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
+2025-06-07 00:20:44 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
+2025-06-07 00:20:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 00:20:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-07 00:20:44 [main] INFO  c.e.demo.SneakerKneeApplication - Started SneakerKneeApplication in 5.133 seconds (process running for 5.406)
+2025-06-07 00:21:20 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07 00:21:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-07 00:21:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-07 00:21:20 [http-nio-8080-exec-1] INFO  c.e.demo.controller.UsersController - Attempt to register new user with email: matvey.andreev01@gmail.com
+2025-06-07 00:21:20 [http-nio-8080-exec-1] INFO  c.example.demo.service.UsersService - Attempting to register new user with email: matvey.andreev01@gmail.com
+2025-06-07 00:21:20 [http-nio-8080-exec-1] INFO  c.example.demo.service.UsersService - User registered successfully with ID: 2
+2025-06-07 00:21:20 [http-nio-8080-exec-1] INFO  c.e.demo.controller.UsersController - User registered successfully with ID: 2
+2025-06-07 00:22:17 [http-nio-8080-exec-4] INFO  c.e.demo.controller.OrdersController - Attempt to create order for user: 2, products: [1], address: saratob
+2025-06-07 00:22:17 [http-nio-8080-exec-4] INFO  c.example.demo.service.OrdersService - Creating order for user ID: 2, products: [1], address: saratob
+2025-06-07 00:22:17 [http-nio-8080-exec-4] INFO  c.example.demo.service.OrdersService - Order created successfully with ID: 2
+2025-06-07 00:22:17 [http-nio-8080-exec-4] INFO  c.e.demo.controller.OrdersController - Order created successfully with ID: 2
+2025-06-07 00:22:19 [http-nio-8080-exec-5] INFO  c.e.demo.controller.OrdersController - Attempt to create order for user: 2, products: [1], address: saratob
+2025-06-07 00:22:19 [http-nio-8080-exec-5] INFO  c.example.demo.service.OrdersService - Creating order for user ID: 2, products: [1], address: saratob
+2025-06-07 00:22:19 [http-nio-8080-exec-5] INFO  c.example.demo.service.OrdersService - Order created successfully with ID: 3
+2025-06-07 00:22:19 [http-nio-8080-exec-5] INFO  c.e.demo.controller.OrdersController - Order created successfully with ID: 3
+2025-06-07 00:22:42 [http-nio-8080-exec-6] INFO  c.e.demo.controller.OrdersController - Updating order status for ID: 3, new status: CANCELLED
+2025-06-07 00:22:42 [http-nio-8080-exec-6] INFO  c.example.demo.service.OrdersService - Updating status for order ID: 3 to CANCELLED
+2025-06-07 00:22:44 [http-nio-8080-exec-6] INFO  c.example.demo.service.EmailService - Email sent to matvey.andreev01@gmail.com for order ID 3 with new status CANCELLED
+2025-06-07 00:22:44 [http-nio-8080-exec-6] INFO  c.example.demo.service.OrdersService - Order ID: 3 status updated to CANCELLED
+2025-06-07 00:22:44 [http-nio-8080-exec-6] INFO  c.e.demo.controller.OrdersController - Order status updated successfully for ID: 3
+2025-06-07 00:23:05 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-07 00:23:05 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-07 00:23:05 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:23:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 00:23:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 15:06:04 [main] INFO  c.e.demo.SneakerKneeApplication - Starting SneakerKneeApplication using Java 17.0.12 with PID 13240 (C:\Users\mat_m\IdeaProjects\SneakerKnee\target\classes started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
+2025-06-07 15:06:04 [main] INFO  c.e.demo.SneakerKneeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 15:06:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 15:06:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
+2025-06-07 15:06:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-07 15:06:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-07 15:06:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-07 15:06:05 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-07 15:06:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1432 ms
+2025-06-07 15:06:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 15:06:06 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2dd178f3
+2025-06-07 15:06:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 15:06:06 [main] INFO  liquibase.database - Set default schema name to public
+2025-06-07 15:06:06 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 15:06:06 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-06-07 15:06:06 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 15:06:06 [main] INFO  liquibase.util - UPDATE SUMMARY
+2025-06-07 15:06:06 [main] INFO  liquibase.util - Run:                          0
+2025-06-07 15:06:06 [main] INFO  liquibase.util - Previously run:               4
+2025-06-07 15:06:06 [main] INFO  liquibase.util - Filtered out:                 0
+2025-06-07 15:06:06 [main] INFO  liquibase.util - -------------------------------
+2025-06-07 15:06:06 [main] INFO  liquibase.util - Total change sets:            4
+2025-06-07 15:06:06 [main] INFO  liquibase.util - Update summary generated
+2025-06-07 15:06:06 [main] INFO  liquibase.command - Command execution complete
+2025-06-07 15:06:07 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 15:06:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-07 15:06:07 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 15:06:07 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 15:06:07 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-07 15:06:07 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07 15:06:08 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 15:06:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 15:06:08 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
+2025-06-07 15:06:08 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 15:06:08 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
+2025-06-07 15:06:08 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
+2025-06-07 15:06:08 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
+2025-06-07 15:06:09 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 15:06:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-07 15:06:09 [main] INFO  c.e.demo.SneakerKneeApplication - Started SneakerKneeApplication in 5.519 seconds (process running for 5.842)
+2025-06-07 15:06:14 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07 15:06:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-07 15:06:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-07 15:06:15 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 373 ms
+2025-06-07 15:06:27 [http-nio-8080-exec-10] INFO  c.e.demo.controller.OrdersController - Updating order status for ID: 3, new status: SHIPPED
+2025-06-07 15:06:27 [http-nio-8080-exec-10] INFO  c.example.demo.service.OrdersService - Updating status for order ID: 3 to SHIPPED
+2025-06-07 15:06:29 [http-nio-8080-exec-10] INFO  c.example.demo.service.EmailService - Email sent to matvey.andreev01@gmail.com for order ID 3 with new status SHIPPED
+2025-06-07 15:06:29 [http-nio-8080-exec-10] INFO  c.example.demo.service.OrdersService - Order ID: 3 status updated to SHIPPED
+2025-06-07 15:06:29 [http-nio-8080-exec-10] INFO  c.e.demo.controller.OrdersController - Order status updated successfully for ID: 3
+2025-06-07 15:06:49 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-07 15:06:49 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-07 15:06:49 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 15:06:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 15:06:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 15:07:05 [main] INFO  c.e.demo.security.SqlInjectionTest - Starting SqlInjectionTest using Java 17.0.12 with PID 15732 (started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
+2025-06-07 15:07:05 [main] INFO  c.e.demo.security.SqlInjectionTest - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 15:07:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 15:07:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2025-06-07 15:07:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 15:07:06 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3af236d0
+2025-06-07 15:07:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 15:07:06 [main] INFO  liquibase.database - Set default schema name to public
+2025-06-07 15:07:06 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 15:07:06 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-06-07 15:07:06 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 15:07:06 [main] INFO  liquibase.util - UPDATE SUMMARY
+2025-06-07 15:07:06 [main] INFO  liquibase.util - Run:                          0
+2025-06-07 15:07:06 [main] INFO  liquibase.util - Previously run:               4
+2025-06-07 15:07:06 [main] INFO  liquibase.util - Filtered out:                 0
+2025-06-07 15:07:06 [main] INFO  liquibase.util - -------------------------------
+2025-06-07 15:07:06 [main] INFO  liquibase.util - Total change sets:            4
+2025-06-07 15:07:06 [main] INFO  liquibase.util - Update summary generated
+2025-06-07 15:07:06 [main] INFO  liquibase.command - Command execution complete
+2025-06-07 15:07:07 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 15:07:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-07 15:07:07 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 15:07:07 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 15:07:07 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-07 15:07:07 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07 15:07:08 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 15:07:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 15:07:08 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
+2025-06-07 15:07:08 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 15:07:08 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
+2025-06-07 15:07:08 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
+2025-06-07 15:07:08 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
+2025-06-07 15:07:08 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 15:07:09 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-06-07 15:07:09 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-06-07 15:07:09 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-06-07 15:07:09 [main] INFO  c.e.demo.security.SqlInjectionTest - Started SqlInjectionTest in 4.705 seconds (process running for 5.549)
+2025-06-07 15:07:10 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 15:07:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 15:07:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 15:07:14 [main] INFO  com.example.demo.security.XssTest - Starting XssTest using Java 17.0.12 with PID 16608 (started by matw in C:\Users\mat_m\IdeaProjects\SneakerKnee)
+2025-06-07 15:07:14 [main] INFO  com.example.demo.security.XssTest - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 15:07:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 15:07:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2025-06-07 15:07:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 15:07:15 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@54895681
+2025-06-07 15:07:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 15:07:16 [main] INFO  liquibase.database - Set default schema name to public
+2025-06-07 15:07:16 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 15:07:16 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-06-07 15:07:16 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-06-07 15:07:16 [main] INFO  liquibase.util - UPDATE SUMMARY
+2025-06-07 15:07:16 [main] INFO  liquibase.util - Run:                          0
+2025-06-07 15:07:16 [main] INFO  liquibase.util - Previously run:               4
+2025-06-07 15:07:16 [main] INFO  liquibase.util - Filtered out:                 0
+2025-06-07 15:07:16 [main] INFO  liquibase.util - -------------------------------
+2025-06-07 15:07:16 [main] INFO  liquibase.util - Total change sets:            4
+2025-06-07 15:07:16 [main] INFO  liquibase.util - Update summary generated
+2025-06-07 15:07:16 [main] INFO  liquibase.command - Command execution complete
+2025-06-07 15:07:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 15:07:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-07 15:07:16 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 15:07:16 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 15:07:16 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-07 15:07:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07 15:07:17 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 15:07:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 15:07:17 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name usersService
+2025-06-07 15:07:18 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 15:07:18 [main] INFO  c.example.demo.service.OrdersService - OrdersService initialized
+2025-06-07 15:07:18 [main] INFO  c.e.demo.service.ProductsService - ProductsService initialized
+2025-06-07 15:07:18 [main] INFO  c.e.demo.controller.UsersController - UsersController initialized
+2025-06-07 15:07:18 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 15:07:19 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-06-07 15:07:19 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-06-07 15:07:19 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-06-07 15:07:19 [main] INFO  com.example.demo.security.XssTest - Started XssTest in 4.716 seconds (process running for 5.577)
+2025-06-07 15:07:19 [main] INFO  c.e.d.controller.ProductsController - Attempt to create new product: com.example.demo.model.Products@1135f0c4
+2025-06-07 15:07:19 [main] INFO  c.e.demo.service.ProductsService - Creating new product: com.example.demo.model.Products@1135f0c4
+2025-06-07 15:07:19 [main] INFO  c.e.demo.service.ProductsService - Product created successfully with ID: 4
+2025-06-07 15:07:19 [main] INFO  c.e.d.controller.ProductsController - Product created successfully with ID: 4
+2025-06-07 15:07:19 [main] INFO  c.e.demo.controller.UsersController - Attempt to register new user with email: testxss@example.com
+2025-06-07 15:07:19 [main] INFO  c.example.demo.service.UsersService - Attempting to register new user with email: testxss@example.com
+2025-06-07 15:07:19 [main] INFO  c.example.demo.service.UsersService - User registered successfully with ID: 3
+2025-06-07 15:07:19 [main] INFO  c.e.demo.controller.UsersController - User registered successfully with ID: 3
+2025-06-07 15:07:19 [main] INFO  c.e.demo.controller.OrdersController - Attempt to create order for user: 1, products: [5], address: &amp;lt;svg/onload=alert('XSS')&amp;gt;
+2025-06-07 15:07:19 [main] INFO  c.example.demo.service.OrdersService - Creating order for user ID: 1, products: [5], address: &amp;lt;svg/onload=alert('XSS')&amp;gt;
+2025-06-07 15:07:19 [main] INFO  c.example.demo.service.OrdersService - Order created successfully with ID: 4
+2025-06-07 15:07:19 [main] INFO  c.e.demo.controller.OrdersController - Order created successfully with ID: 4
+2025-06-07 15:07:19 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 15:07:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 15:07:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

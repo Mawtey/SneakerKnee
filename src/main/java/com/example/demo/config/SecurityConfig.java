@@ -1,6 +1,7 @@
 package com.example.demo.config;
 
 import com.example.demo.security.JwtAuthFilter;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -38,10 +39,16 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/api/auth/**",
                                 "/api/users/register",
+                                "/api/users",
                                 "/swagger-ui/**",
                                 "/v3/api-docs/**",
                                 "/swagger-resources/**",
-                                "/webjars/**"
+                                "/webjars/**",
+                                "/api/products",
+                                "/api/products/**",
+                                "/api/orders",
+                                "/api/orders/**",
+                                "/api/orders/{id}/status"
                         ).permitAll()
 
                         .anyRequest().authenticated()
@@ -52,5 +59,14 @@ public class SecurityConfig {
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
+    }
+    @Bean
+    public FilterRegistrationBean<XSSFilter> xssFilterRegistration() {
+        FilterRegistrationBean<XSSFilter> registration = new FilterRegistrationBean<>();
+        registration.setFilter(new XSSFilter());
+        registration.addUrlPatterns("/*");
+        registration.setName("XSS Filter");
+        registration.setOrder(1);
+        return registration;
     }
 }

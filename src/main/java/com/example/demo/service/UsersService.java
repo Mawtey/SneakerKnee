@@ -12,6 +12,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.apache.commons.text.StringEscapeUtils;
 
 import java.util.List;
 import java.util.Optional;
@@ -41,6 +42,12 @@ public class UsersService implements UserDetailsService {
         if (usersRepository.existsByEmail(user.getEmail())) {
             logger.error("Registration failed - email already exists: {}", user.getEmail());
             throw new IllegalArgumentException("Email already exists");
+        }
+
+        // Экранирование входных данных
+        user.setName(StringEscapeUtils.escapeHtml4(user.getName()));
+        if (user.getAddress() != null) {
+            user.setAddress(StringEscapeUtils.escapeHtml4(user.getAddress()));
         }
 
         logger.debug("Hashing password for user: {}", user.getEmail());

@@ -1,11 +1,13 @@
 package com.example.demo.service;
 
+import org.apache.commons.text.StringEscapeUtils;
 import com.example.demo.model.Products;
 import com.example.demo.repository.ProductsRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.apache.commons.text.StringEscapeUtils;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -26,6 +28,14 @@ public class ProductsService {
     public Products createProduct(Products product) {
         logger.info("Creating new product: {}", product);
         try {
+            product.setName(StringEscapeUtils.escapeHtml4(product.getName()));
+            product.setBrand(StringEscapeUtils.escapeHtml4(product.getBrand()));
+            product.setColor(StringEscapeUtils.escapeHtml4(product.getColor()));
+            product.setSize(StringEscapeUtils.escapeHtml4(product.getSize()));
+            if (product.getDescription() != null) {
+                product.setDescription(StringEscapeUtils.escapeHtml4(product.getDescription()));
+            }
+
             Products savedProduct = productsRepository.save(product);
             logger.info("Product created successfully with ID: {}", savedProduct.getId());
             return savedProduct;

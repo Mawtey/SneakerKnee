@@ -25,10 +25,11 @@ public class OrdersService {
 
     public OrdersService(OrdersRepository ordersRepository,
                          ProductsRepository productsRepository,
-                         UsersService usersService) {
+                         UsersService usersService, EmailService emailService) {
         this.ordersRepository = ordersRepository;
         this.productsRepository = productsRepository;
         this.usersService = usersService;
+        this.emailService = emailService;
         logger.info("OrdersService initialized");
     }
 
@@ -81,6 +82,7 @@ public class OrdersService {
         }
     }
 
+
     public List<Orders> getOrdersByUserId(Integer userId) {
         logger.debug("Fetching orders for user ID: {}", userId);
         List<Orders> orders = ordersRepository.findByUserId(userId);
@@ -106,6 +108,28 @@ public class OrdersService {
         return order;
     }
 
+//    @Transactional
+//    public Orders updateOrderStatus(Integer id, String status) {
+//        logger.info("Updating status for order ID: {} to {}", id, status);
+//        try {
+//            Orders order = ordersRepository.findById(id)
+//                    .orElseThrow(() -> {
+//                        logger.error("Order not found with ID: {}", id);
+//                        return new IllegalArgumentException("Order not found");
+//                    });
+//
+//            order.setStatus(status);
+//            Orders updatedOrder = ordersRepository.save(order);
+//            logger.info("Order ID: {} status updated to {}", id, status);
+//            return updatedOrder;
+//
+//        } catch (Exception e) {
+//            logger.error("Error updating order status: {}", e.getMessage());
+//            throw e;
+//        }
+//    }
+private final EmailService emailService;
+
     @Transactional
     public Orders updateOrderStatus(Integer id, String status) {
         logger.info("Updating status for order ID: {} to {}", id, status);
@@ -118,6 +142,11 @@ public class OrdersService {
 
             order.setStatus(status);
             Orders updatedOrder = ordersRepository.save(order);
+
+            // Отправка письма
+            String email = order.getUser().getEmail();
+            emailService.sendOrderStatusUpdate(email, id.toString(), status);
+
             logger.info("Order ID: {} status updated to {}", id, status);
             return updatedOrder;
 
@@ -126,6 +155,7 @@ public class OrdersService {
             throw e;
         }
     }
+
 
     @Transactional
     public void cancelOrder(Integer id) {
