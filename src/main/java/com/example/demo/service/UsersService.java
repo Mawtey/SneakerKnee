@@ -44,7 +44,6 @@ public class UsersService implements UserDetailsService {
             throw new IllegalArgumentException("Email already exists");
         }
 
-        // Экранирование входных данных
         user.setName(StringEscapeUtils.escapeHtml4(user.getName()));
         if (user.getAddress() != null) {
             user.setAddress(StringEscapeUtils.escapeHtml4(user.getAddress()));

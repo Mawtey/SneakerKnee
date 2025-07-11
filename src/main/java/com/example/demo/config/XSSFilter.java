@@ -16,3 +16,4 @@ public class XSSFilter implements Filter {
         chain.doFilter(new XSSRequestWrapper((HttpServletRequest) request), response);
     }
 }
+//<script>alert('XSS')</script>
